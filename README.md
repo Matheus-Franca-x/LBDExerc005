@@ -22,26 +22,16 @@ f) Considerando a tabela abaixo, gere uma massa de dados, com 100 registros, par
 -|-|-|-|-|-
 INT (PK) |VARCHAR(40) |INT |VARCHAR(10) |INT |DECIMAL(7,2)
 
-• ID incremental a iniciar de 10001
+- ID incremental a iniciar de 10001
+- Marca segue o padrão simples, Marca 1, Marca 2, Marca 3, etc.
+- QtdRAM é um número aleatório* dentre os valores permitidos (2, 4, 8, 16)
+- TipoHD segue o padrão:
+  - Se o ID dividido por 3 der resto 0, é HDD
+  - Se o ID dividido por 3 der resto 1, é SSD
+  - Se o ID dividido por 3 der resto 2, é M2 NVME
+- QtdHD segue o padrão:
+  - Se o TipoHD for HDD, um valor aleatório* dentre os valores permitidos (500, 1000 ou 2000)
+  - Se o TipoHD for SSD, um valor aleatório* dentre os valores permitidos (128, 256, 512)
+- FreqHD é um número aleatório* entre 1.70 e 3.20
 
-• Marca segue o padrão simples, Marca 1, Marca 2, Marca 3, etc.
-
-• QtdRAM é um número aleatório* dentre os valores permitidos (2, 4, 8, 16)
-
-• TipoHD segue o padrão:
-
-o Se o ID dividido por 3 der resto 0, é HDD
-
-o Se o ID dividido por 3 der resto 1, é SSD
-
-o Se o ID dividido por 3 der resto 2, é M2 NVME
-
-• QtdHD segue o padrão:
-
-o Se o TipoHD for HDD, um valor aleatório* dentre os valores permitidos (500, 1000 ou 2000)
-
-o Se o TipoHD for SSD, um valor aleatório* dentre os valores permitidos (128, 256, 512)
-
-• FreqHD é um número aleatório* entre 1.70 e 3.20
-
-* Função RAND() gera números aleatórios entre 0 e 0,9999...
+- Função RAND() gera números aleatórios entre 0 e 0,9999...
