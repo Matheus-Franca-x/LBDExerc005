@@ -1,7 +1,7 @@
 # LBDExerc005
 
 Exercícios:
-1) Fazer em SQL Server os seguintes algoritmos:
+Fazer em SQL Server os seguintes algoritmos:
 
 a) Fazer um algoritmo que leia 1 número e mostre se são múltiplos de 2,3,5 ou nenhum deles
 
